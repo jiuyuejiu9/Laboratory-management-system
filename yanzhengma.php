@@ -1,0 +1,37 @@
+<?php
+session_start();
+header('Content-type:image/gif');
+$image_w=100;
+$image_h=25;
+$number=range(0,9);
+$character=range("Z","A");
+$result=array_merge($number,$character);
+$string="";
+$len=count($result);
+$code="";
+for($i=0;$i<4;$i++)
+{
+    $new_number[$i]=$result[rand(0,$len-1)];
+    $string =$string.$new_number[$i];
+    $_SESSION['code'] = $string;
+}
+$check_image=imagecreatetruecolor($image_w,$image_h);
+$white=imagecolorallocate($check_image,255,255,255);
+$black=imagecolorallocate($check_image,0,0,0);
+imagefill($check_image,0,0,$white);
+for($i=0;$i<100;$i++)
+{
+    imagesetpixel($check_image,rand(0,$image_w),rand(0,$image_h),$black);
+}
+for($i=0;$i<count($new_number);$i++)
+{
+    $x=mt_rand(1,8)+$image_w*$i/4;
+    $y=mt_rand(1,$image_h/4);
+    //随机设定字符颜色
+    $color=imagecolorallocate($check_image,mt_rand(0,200),mt_rand(0,200),mt_rand(0,200));
+    //输入字符到图片
+    imagestring($check_image,5,$x,$y,$new_number[$i],$color);
+}
+imagepng($check_image);
+imagedestroy($check_image);
+?>

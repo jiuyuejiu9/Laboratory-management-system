@@ -1,0 +1,282 @@
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* horizontal menu */
+img {
+    max-width: 100%;
+}
+
+/*-- end reset --*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*-- main --*/
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+
+.main-top-intro {
+    background-image: url(../images/bg1.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg-layer {
+    background: rgba(0, 0, 0, 0.54);
+    min-height: 100vh;
+}
+
+/*-- //slide --*/
+
+/*--header start here--*/
+header {
+    padding: 2em 0;
+}
+
+/* header */
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header-w3layouts {
+    float: left;
+}
+
+
+
+p.navbar-brand {
+    font-size: 0.9em;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 800;
+}
+
+
+
+
+/*-- //header --*/
+
+body h2 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 7px;
+    margin: 1em 0 0 0;
+}
+
+.main-icon {
+    text-align: center;
+}
+
+.content-inner-info {
+    padding-top: 6em;
+}
+
+
+a {
+    color: #585858;
+    margin: 0em;
+}
+
+.bottom {
+    margin: 1em 0 0;
+}
+
+.content-w3layouts-main {
+    max-width: 350px;
+    position: relative;
+    padding: 3em 0em;
+}
+
+.header-left {
+    background: #fff;
+    padding: 0px;
+}
+
+::-webkit-input-placeholder {
+    color: #888 !important;
+}
+
+.form-w3ls-left-info input[type="email"] {
+    outline: none;
+    font-size: 14px;
+    color: #888;
+    border: none;
+    width: 92%;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 0 0 1em;
+    padding: 1em 1em;
+    background: #fff;
+}
+
+.form-w3ls-left-info input[type="password"] {
+    outline: none;
+    font-size: 14px;
+    color: #888;
+    border: none;
+    width: 92%;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 0 0 1em;
+    padding: 1em 1em;
+    background: #fff;
+
+}
+
+.form-w3ls-left-info button.btn {
+    background: #f54785;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    float: left;
+}
+
+button.btn.reg {
+    margin-left: 2%;
+    background: #4cc2c4;
+}
+
+/*--  --*/
+.form-w3ls-left-info p {
+    color: #000;
+    display: inline-block;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.form-w3ls-left-info p.right {
+    text-align: right;
+}
+
+.form-w3ls-left-info p a {
+    font-size: 0.7em;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.heading h5 {
+    color: #c5c5c5;
+    color: #000000;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+/*-- header end here --*/
+
